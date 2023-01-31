@@ -1,0 +1,15 @@
+D:\Sean\Documents\toy int\bin\Debug\net7.0\toy int.exe
+D:\Sean\Documents\toy int\bin\Debug\net7.0\toy int.deps.json
+D:\Sean\Documents\toy int\bin\Debug\net7.0\toy int.runtimeconfig.json
+D:\Sean\Documents\toy int\bin\Debug\net7.0\toy int.dll
+D:\Sean\Documents\toy int\bin\Debug\net7.0\toy int.pdb
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.csproj.AssemblyReference.cache
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.AssemblyInfoInputs.cache
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.AssemblyInfo.cs
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.csproj.CoreCompileInputs.cache
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.dll
+D:\Sean\Documents\toy int\obj\Debug\net7.0\refint\toy int.dll
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.pdb
+D:\Sean\Documents\toy int\obj\Debug\net7.0\toy int.genruntimeconfig.cache
+D:\Sean\Documents\toy int\obj\Debug\net7.0\ref\toy int.dll
