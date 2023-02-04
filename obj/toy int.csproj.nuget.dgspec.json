@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sean\\Documents\\toy int\\toy int.csproj": {}
+    "D:\\Sean\\Documents\\GitHub\\toyint\\toy int.csproj": {}
   },
   "projects": {
-    "D:\\Sean\\Documents\\toy int\\toy int.csproj": {
+    "D:\\Sean\\Documents\\GitHub\\toyint\\toy int.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sean\\Documents\\toy int\\toy int.csproj",
+        "projectUniqueName": "D:\\Sean\\Documents\\GitHub\\toyint\\toy int.csproj",
         "projectName": "toy int",
-        "projectPath": "D:\\Sean\\Documents\\toy int\\toy int.csproj",
+        "projectPath": "D:\\Sean\\Documents\\GitHub\\toyint\\toy int.csproj",
         "packagesPath": "C:\\Users\\sflor\\.nuget\\packages\\",
-        "outputPath": "D:\\Sean\\Documents\\toy int\\obj\\",
+        "outputPath": "D:\\Sean\\Documents\\GitHub\\toyint\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
