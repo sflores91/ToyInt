@@ -33,26 +33,28 @@ class ToyIntFunc
     }
     public void DoCommands()
     {
+        //ToyIntFunc funcInst = (ToyIntFunc)this.MemberwiseClone();    
         foreach (ToyIntCmd cmd in commandBank)
         {
             if (cmd.cmdType.StartsWith("#"))
             {
                 ToyIntFunc rootFunc = ToyIntFuncBank.GetFuncFromBank(cmd.cmdType.Replace("#", ""));
-                rootFunc.DoCommands(rootFunc, cmd.parentFunction, cmd.cmdType);
-
+                ToyIntFunc funcInst = (ToyIntFunc)rootFunc.MemberwiseClone();
+                funcInst.DoCommands(funcInst, cmd.parentFunction, cmd.cmdType);
             }
             cmd.DoCommand();
         }
     }
     public void DoCommands(ToyIntFunc func, string caller, string callingFunc)
     {
+        //ToyIntFunc funcInst = (ToyIntFunc)this.MemberwiseClone();
         foreach (ToyIntCmd cmd in func.commandBank)
         {
             if (cmd.cmdType.StartsWith("#"))
             {
                 ToyIntFunc rootFunc = ToyIntFuncBank.GetFuncFromBank(cmd.cmdType.Replace("#", ""));
-                rootFunc.DoCommands(rootFunc, cmd.parentFunction, cmd.cmdType);
-
+                ToyIntFunc funcInst = (ToyIntFunc)rootFunc.MemberwiseClone();
+                funcInst.DoCommands(funcInst, cmd.parentFunction, cmd.cmdType);
             }
             cmd.DoCommand(caller, callingFunc);
         }

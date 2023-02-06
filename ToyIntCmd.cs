@@ -119,36 +119,23 @@ class ToyIntCmd
     public void DoMath()
     {
         Dictionary<string, string> vars = GetVar();
+        decimal[] operands = vars.Select(i => Decimal.TryParse(i.Value, out decimal v) ? v : 0).ToArray(); // be zero if not exists
+        decimal opA = operands[0];
+        decimal opB = operands[1];
         decimal ret = 0;
         switch (cmdType)
         {
             case "add":
-                foreach (var v in vars)
-                {
-                    Decimal.TryParse(v.Value, out decimal val);
-                    ret += val;
-                }
+                ret = opA + opB;
                 break;
             case "subtract":
-                foreach (var v in vars)
-                {
-                    Decimal.TryParse(v.Value, out decimal val);
-                    ret -= val;
-                }
+                ret = opA - opB;
                 break;
             case "multiply":
-                foreach (var v in vars)
-                {
-                    Decimal.TryParse(v.Value, out decimal val);
-                    ret *= val;
-                }
+                ret = opA * opB;
                 break;
             case "divide":
-                foreach (var v in vars)
-                {
-                    Decimal.TryParse(v.Value, out decimal val);
-                    ret /= val;
-                }
+                ret = opA / opB;
                 break;
         }
         ToyIntVar.AddVar(cmdOutput, ret.ToString());
@@ -169,7 +156,6 @@ class ToyIntCmd
                 ToyIntCmd callingFunc = ToyIntFuncBank.GetCommandFromBank(callingFunction, parentFunction);
                 cmdArgs[arg.Key] = callingFunc.cmdArgs[s];
             }
-
         }
         foreach (var arg in cmdArgs)
         {

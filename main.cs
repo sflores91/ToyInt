@@ -21,6 +21,14 @@ class ToyInterpereterMain
         ToyIntJsonParser jsonParse = new ToyIntJsonParser();
         jsonParse.ProcessFile(jsonPath);
         ToyIntFuncBank.RunFunctions();
+        // test new file
+        string newJsonPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"testFile1.json");
+        jsonParse.ProcessFile(newJsonPath);
+        ToyIntFuncBank.RunFunctions();
+        //another test file
+        string newerJsonPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"testFile2.json");
+        jsonParse.ProcessFile(newerJsonPath);
+        ToyIntFuncBank.RunFunctions();
     }
 }
 
