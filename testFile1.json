@@ -1,0 +1,31 @@
+{
+  "var4": 7,
+  "var5": 10,
+  "init": [
+      { "cmd": "#setup" },
+      { "cmd": "#printthing" }
+    ],
+  "printthing": [
+    {
+        "cmd": "print",
+        "value": "#var5"
+    }
+    ],
+    "setup": [
+        {
+            "cmd": "delete",
+            "id": "#var3"
+        },
+        {
+            "cmd": "multiply",
+            "id": "var11",
+            "value1": "#var4",
+            "value2": "#var2"
+        },
+        {
+            "cmd": "create",
+            "id": "specialVar",
+            "value": 4
+        }
+    ]
+}

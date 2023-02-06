@@ -1,0 +1,86 @@
+{
+  "imAVar": 93,
+  "superVar": 3,
+
+  "init": [
+    {
+        "cmd": "print",
+        "value": "#imAVar"
+    },
+    {
+        "cmd": "#division",
+        "id": "var4",
+        "value1": "#imAVar",
+        "value2": "#superVar"
+    },
+    { "cmd": "#setup2"}
+  ],
+
+  "setup2": [
+    {
+      "cmd": "update",
+      "id": "specialVar",
+      "value": 9.256
+    },
+    {
+      "cmd": "print",
+      "value": "#specialVar"
+    },
+    { 
+      "cmd": "#sum",
+      "id": "var73",
+      "value1": "#imAVar",
+      "value2": "#specialVar"
+    },
+    {
+      "cmd": "print",
+      "value": "#var73"
+    },
+    {
+      "cmd": "create",
+      "id": "var3",
+      "value": 5
+    },
+    {
+      "cmd": "delete",
+      "id": "var1"
+    },
+    { "cmd": "#printSomeMore" }
+  ],
+
+  "division": [
+    {
+      "cmd": "divide",
+      "id": "$id",
+      "operand1": "$value2",
+      "operand2": "$value1"
+    }
+  ],
+
+  "printSomeMore": [
+    {
+      "cmd": "print",
+      "value": "#specialVar"
+    },
+    {
+      "cmd": "print",
+      "value": "#imAVar"
+    },
+    {
+      "cmd": "print",
+      "value": "#var3"
+    },
+    {
+        "cmd": "print",
+        "value": "#var4"
+    },
+    {
+        "cmd": "print",
+        "value": "#var5"
+    },
+    {
+        "cmd": "print",
+        "value": "#var11"
+    }
+  ]
+}
